@@ -10,4 +10,11 @@ import { Header } from './header/header';
 })
 export class App {
   protected readonly title = signal('firstProject');
+  login(){
+    alert("Welcome!");
+  }
+  isRed = false;
+  change(){
+    this.isRed = !this.isRed;
+  }
 }
