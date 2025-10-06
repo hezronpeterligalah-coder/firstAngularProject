@@ -4,12 +4,14 @@ import { Component } from '@angular/core';
   selector: 'app-header',
   imports: [],
   template: `
-    <p>
-      Hello!
-    </p>
+    <h1>
+      {{title}}
+    </h1>
   `,
   styleUrl: './header.css'
 })
 export class Header {
+
+  title = 'My Notes';
 
 }
