@@ -1,21 +1,12 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
 import { Header } from './header/header';
-import { Products } from './products/products';
+import { NotesList } from './notes-list/notes-list';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Products],
+  imports: [Header, NotesList],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('firstProject');
-  login(){
-    alert("Welcome!");
-  }
-  isRed = false;
-  change(){
-    this.isRed = !this.isRed;
-  }
 }
