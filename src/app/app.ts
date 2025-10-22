@@ -8,7 +8,6 @@ import { AddNote } from './add-note/add-note';
   selector: 'app-root',
   imports: [Header, NotesList, AddNote],
   templateUrl: './app.html',
-  styleUrl: './app.css'
 })
 export class App {
 }
