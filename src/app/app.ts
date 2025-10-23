@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { Header } from './header/header';
-import { NotesList } from './notes-list/notes-list';
-import { AddNote } from './add-note/add-note';
-
+import { RouterModule } from '@angular/router';
+import { Header } from '../header/header';
 
 @Component({
   selector: 'app-root',
-  imports: [Header, NotesList, AddNote],
+  standalone: true,
   templateUrl: './app.html',
+  imports: [RouterModule, Header],
 })
-export class App {
-}
+export class App {}
